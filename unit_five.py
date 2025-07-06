@@ -124,14 +124,14 @@ class Node:
         self.value = value
         self.next = next
         
-tom_nook = Node("Tom Nook")
-tommy = Node("Tommy") 
-tom_nook.next = tommy 
+#tom_nook = Node("Tom Nook")
+#tommy = Node("Tommy") 
+#tom_nook.next = tommy 
 
 #Make timmy next node of Tom Nook
-timmy = Node("Timmy")
-tom_nook.next = timmy
-timmy.next = tommy
+#timmy = Node("Timmy")
+#tom_nook.next = timmy
+#timmy.next = tommy
 
 #print(tom_nook.value)
 #print(tom_nook.next.value)
@@ -140,14 +140,37 @@ timmy.next = tommy
 #print(tommy.value)
 #print(tommy.next)
 
+#saharah = Node("Saharah")
+#tom_nook.next = None
+#tommy.next = saharah
+
+#print(tom_nook.next) 
+#print(timmy.value) 
+#print(timmy.next.value)  
+#print(tommy.value) 
+#print(tommy.next.value)
+#print(saharah.value)  
+#print(saharah.next) 
+
+def print_list(node):
+    order = []
+    seperator = " -> "
+    while node:
+        order.append(node.value)
+        node = node.next
+    return seperator.join(order)
+
+isabelle = Node("Isabelle")
 saharah = Node("Saharah")
-tom_nook.next = None
-tommy.next = saharah
-print(tom_nook.next) 
-print(timmy.value) 
-print(timmy.next.value)  
-print(tommy.value) 
-print(tommy.next.value)
-print(saharah.value)  
-print(saharah.next) 
-print(tom_nook)
+cj = Node("C.J.")
+joe = Node("Joe")
+carl = Node("Carl.")
+jc = Node("J.C.")
+isabelle.next = saharah
+saharah.next = cj
+cj.next = joe
+joe.next = carl
+carl.next = jc
+
+
+print(print_list(isabelle))
