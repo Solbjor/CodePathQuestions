@@ -176,3 +176,5 @@ carl.next = jc
 print(print_list(isabelle))
 
 #####################################################
+
+#lol
