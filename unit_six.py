@@ -12,3 +12,4 @@ def print_linked_list(node):
     print()
 		
 top_hits_2010s = SongNode("Uptown Funk", SongNode("Party Rock Anthem", SongNode("Bad Romance")))
+print_linked_list(top_hits_2010s)
