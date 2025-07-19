@@ -1,4 +1,4 @@
-# Fibonnacci with Memo, memo servers as a cache and stores the numbers we've already encountered
+# Fibonnacci with Memoization, memo servers as a cache and stores the numbers we've already encountered
 
 def fibonacci(num, memo={}):
     if num in memo:
