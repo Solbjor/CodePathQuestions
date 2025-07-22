@@ -32,7 +32,6 @@ print(count_suits_iterative(["Mark I", "Mark II", "Mark III"]))
 print(count_suits_recursive(["Mark I", "Mark I", "Mark III", "Mark IV"]))
 
 
-
 def sum_stones(stones):
     
     if not stones:
